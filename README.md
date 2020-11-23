@@ -1,65 +1,67 @@
-# Java-Notes
+ Java-Notes
+ =
 personalStudyNotes
+-
 
-## Scanner类的使用
-Scanner类的功能：可以实现键盘输入数据，到程序当中。
-Scanner类的使用格式：
-(1)导包
-    import java.util.Scanner;
-    如果需要使用的目标类，和当前类位于同一个包下，则可以省略导包语句不写。
-    只有java.lang包下的内容不需要导包，其他的包都需要import语句。
-(2)创建
-    类名称  对象名 =  new  类名称（）;
-(3)使用
-    对象名.成员方法名（）;
-Public int nextInt();
-(此方法用于录入一个整数
-Public double nextDouble ();
-此方法用于录入一个小数
-Public String nextLine();
-此方法用于录入一个字符串,遇回车键则结束.
-Public String next();
-此方法用于录入一个字符串,遇 空格键 or TAB键则结束.
-## Random类的使用
-  Random类的功能：用来生成随机数字。
-  Random类的使用格式
-  (1)导包
-      import java.util.Random;
-  (2)创建
-      Random r = new Random();
-  (3)使用
-     获取一个随机的int数字:int num = r.nextInt();
-    (此随机数字范围是int所有数字的范围)
-           int num = r.nextInt();
-    (参数代表了范围,范围从0开始,左闭右开)
-## ArrayList类的使用
-  ArrayList类的功能：作为一个长度可以随意变化的数组。
-  ArrayList类的使用格式：
-  1.导包
-  import java.util.ArrayList;
-  2.创建
-  ArrayList<E> list = new ArrayList<>();
-  <E>(泛型):指集合内的所有元素,均统一是X类型的数据,且不能是基本类型数据.
-  如果希望向集合ArrayList当中存储基本数据类型,必须使用基本类型对应的"包装类".
-  基本类型            包装类(引用类型,都位于java.long包下)
-  byte                Byte
-  short               Short
-  int                 Integer 【特殊】
-  long                Long
-  float               Float
-  double              Double
-  char                Character【特殊】
-  boolean             Boolean
-  3.使用
-  ArrayList当中常用的方法
-  (1)add方法:public boolean add (E e);//向集合当中添加元素,参数的类型与泛型一致.返回值代表添加动作是否成功.
-       public void add (int index,E  e);//向集合当中指定位置添加元素.
-  (2)读取方法:public E get(int index);//从集合中获取元素,参数就是索引编号,返回值就是对应位置的元素.
-  (3)删除方法:public E remove(int index);//从集合中删除元素,参数就是索引编号,返回值就是被删除的元素.
-       public boolean remove(Object o);//删除指定的元素,返回值表示删除是否成功.
-  (4)获取长度:public int size();//获取集合的尺寸长度,返回值就是集合中包含的元素个数.
-  (5)修改元素:public E set (int index , E element);//修改指定位置的元素,返回被修改的元素.
-## Object类的使用--->类层次的根类(可以理解为所有类的父类)
+# Scanner类的使用
+<br>Scanner类的功能：可以实现键盘输入数据，到程序当中。
+<br>Scanner类的使用格式：
+<br>(1)导包
+<br>    import java.util.Scanner;
+<br>    如果需要使用的目标类，和当前类位于同一个包下，则可以省略导包语句不写。
+<br>    只有java.lang包下的内容不需要导包，其他的包都需要import语句。
+<br>(2)创建
+<br>    类名称  对象名 =  new  类名称（）;
+<br>(3)使用
+<br>    对象名.成员方法名（）;
+<br>Public int nextInt();
+<br>(此方法用于录入一个整数
+<br>Public double nextDouble ();
+<br>此方法用于录入一个小数
+<br>Public String nextLine();
+<br>此方法用于录入一个字符串,遇回车键则结束.
+<br>Public String next();
+<br>此方法用于录入一个字符串,遇 空格键 or TAB键则结束.
+# Random类的使用
+<br>  Random类的功能：用来生成随机数字。
+<br>  Random类的使用格式
+<br>  (1)导包
+<br>      import java.util.Random;
+<br>  (2)创建
+<br>      Random r = new Random();
+<br>  (3)使用
+<br>     获取一个随机的int数字:int num = r.nextInt();
+<br>    (此随机数字范围是int所有数字的范围)
+<br>           int num = r.nextInt();
+<br>    (参数代表了范围,范围从0开始,左闭右开)
+# ArrayList类的使用
+<br>  ArrayList类的功能：作为一个长度可以随意变化的数组。
+<br>  ArrayList类的使用格式：
+<br>  1.导包
+<br>  import java.util.ArrayList;
+<br>  2.创建
+<br>  ArrayList<E> list = new ArrayList<>();
+<br>  <E>(泛型):指集合内的所有元素,均统一是X类型的数据,且不能是基本类型数据.
+<br>  如果希望向集合ArrayList当中存储基本数据类型,必须使用基本类型对应的"包装类".
+<br>  基本类型            包装类(引用类型,都位于java.long包下)
+<br>  byte                Byte
+<br>  short               Short
+<br>  int                 Integer 【特殊】
+<br>  long                Long
+<br>  float               Float
+<br>  double              Double
+<br>  char                Character【特殊】
+<br>  boolean             Boolean
+<br>  3.使用
+<br>  ArrayList当中常用的方法
+<br>  (1)add方法:public boolean add (E e);//向集合当中添加元素,参数的类型与泛型一致.返回值代表添加动作是否成功.
+<br>       public void add (int index,E  e);//向集合当中指定位置添加元素.
+<br>  (2)读取方法:public E get(int index);//从集合中获取元素,参数就是索引编号,返回值就是对应位置的元素.
+<br>  (3)删除方法:public E remove(int index);//从集合中删除元素,参数就是索引编号,返回值就是被删除的元素.
+<br>       public boolean remove(Object o);//删除指定的元素,返回值表示删除是否成功.
+<br>  (4)获取长度:public int size();//获取集合的尺寸长度,返回值就是集合中包含的元素个数.
+<br>  (5)修改元素:public E set (int index , E element);//修改指定位置的元素,返回被修改的元素.
+# Object类的使用--->类层次的根类(可以理解为所有类的父类)
                     也就不用导包,子类可以直接使用父类中的非私有化成员.
 // Public  String  toString();
     该方法在类中覆写,进而打印对象名的时候可以方便查看对象中的内容.
