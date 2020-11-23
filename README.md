@@ -4,14 +4,16 @@ personalStudyNotes
 -
 
 # Scanner类的使用
-<br>Scanner类的功能：可以实现键盘输入数据，到程序当中。
-<br>Scanner类的使用格式：
-<br>(1)导包
-<br>    import java.util.Scanner;
-<br>    如果需要使用的目标类，和当前类位于同一个包下，则可以省略导包语句不写。
-<br>    只有java.lang包下的内容不需要导包，其他的包都需要import语句。
-<br>(2)创建
-<br>    类名称  对象名 =  new  类名称（）;
+<br> > Scanner类的功能：可以实现键盘输入数据，到程序当中。
+<br> > Scanner类的使用格式：
+<br> * (1)导包
+<br>```Java    
+import java.util.Scanner;
+```
+<br>  > 如果需要使用的目标类，和当前类位于同一个包下，则可以省略导包语句不写。
+<br>  > 只有java.lang包下的内容不需要导包，其他的包都需要import语句。
+<br> * (2)创建
+<br>    ``类名称  对象名 =  new  类名称（）;``
 <br>(3)使用
 <br>    对象名.成员方法名（）;
 <br>Public int nextInt();
